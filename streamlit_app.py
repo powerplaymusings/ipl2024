@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from snowflake.snowpark.functions import col
 from snowflake.snowpark.functions import when_matched
-
+from snowflake.connector import connect
+import requests
 
 
 # Get the current credentials
