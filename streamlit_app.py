@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #from snowflake.snowpark.functions import col
 #from snowflake.snowpark.functions import when_matched
+from snowflake.snowpark.session import Session
 from snowflake.connector import connect
 import requests
 
