@@ -3,14 +3,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 from snowflake.snowpark.functions import when_matched
 
 
 
 # Get the current credentials
-session = get_active_session()
+cnx = st.connection("snowflake")
+session = cnx.session()
+#session = get_active_session()
 
 #teams query
 
